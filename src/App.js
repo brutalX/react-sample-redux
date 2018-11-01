@@ -1,15 +1,22 @@
 import React, { Component } from "react";
-import UserList from "./common/components/UserList";
-import UserDetail from "./common/components/UserDetail";
 import Navi from "./common/components/Navi";
+import Header from './common/components/Header'
+import Overlay from './common/components/Overlay'
 
 class App extends Component {
   render() {
     return (
       <>
-        <UserList />
-        <UserDetail />
-        <Navi />
+        <Header />
+        <Navi>
+          <ul>
+            <li>Home</li>
+            <li>AboutUs</li>
+            <li>News</li>
+            <li>Magazine</li>
+          </ul>
+        </Navi>
+        <Overlay />
       </>
     );
   }
